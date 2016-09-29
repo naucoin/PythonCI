@@ -1,0 +1,11 @@
+dependencies:
+  pre:
+    - pip install numpy==1.11.0
+    - pip install --trusted-host www.simpleitk.org -f http://www.simpleitk.org/SimpleITK/resources/software.html SimpleITK==0.9.1
+    - pip install nose-parameterized==0.5.0
+    - pip install tqdm==4.7.1
+    - pip install PyWavelets==0.4.0
+test:
+  override:
+    - nosetests --with-xunit --logging-level=DEBUG --verbosity=3 tests/test_sitk.py
+    - cp nosetests.xml $CIRCLE_TEST_REPORTS
