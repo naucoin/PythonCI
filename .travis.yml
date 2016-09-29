@@ -43,3 +43,4 @@ script:
   - which python
   - python --version
   - nosetests --nocapture --verbosity=3 tests/test_basic.py
+  - nosetests --nocapture --verbosity=3 tests/test_sitk.py
