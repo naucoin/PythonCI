@@ -27,9 +27,7 @@ before_install:
 # install dependencies
 install:
   - pip install numpy
-#  - pip install --trusted-host www.simpleitk.org -f http://www.simpleitk.org/SimpleITK/resources/software.html SimpleITK==0.9.1
-#  - wget 'https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.9.1/Python/SimpleITK-0.9.1-cp27-none-macosx_10_6_intel.whl'
-#  - pip install 'SimpleITK-0.9.1-cp27-none-macosx_10_6_intel.whl'
+#  - pip install --trusted-host www.simpleitk.org -f http://www.simpleitk.org/SimpleITK/resources/software.html SimpleITK
   - wget 'https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.10.0/Python/SimpleITK-0.10.0-cp27-cp27m-macosx_10_6_intel.whl'
   - which python
   - python --version
